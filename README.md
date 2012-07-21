@@ -1,4 +1,7 @@
-LiangLeeNews
-============
+Liang Lee News Manager
+========================
 
-Display news to every one on the all pages
+Features:
+1.) News will displayed on All pages.
+2.) Enable or Disable News.
+3.) Add Text in Different Colors using.
