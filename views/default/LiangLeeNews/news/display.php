@@ -33,6 +33,6 @@ echo "<div align=\"center\">\n";
 echo "      <form id=\"LIANGLEECSSNEWS01\" method=\"get\">\n";
 echo $leenews;
 echo "</form>\n";
-echo "\n";
+echo "</div> \n ";
 }
 ?>
