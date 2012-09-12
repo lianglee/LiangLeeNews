@@ -14,6 +14,12 @@ $english = array(
 		'lianglee:framewrok:miss' => "LiangLeeFramewrok is Missing",
 	    'lianglee:framewrok:miss:code' => "Error: #LF52 , Please inform site Administrator. ",
 		'leenews:nos' => "Liáng lì xinwén chajiàn, zhè shì xinwén, zhè shì yào xianshì de xiaoxi, rúguo nín you rènhé chajiàn yèmiàn shàng de wèntí fabiao pínglùn, zhè shì xuni wénben",
+		'lee:news:page' => "If you wan't to display a message on custom page type url example ( blog/all ) please don't include full url.",
+		'lee:news:off:on' => "Enable or disable news bar",
+		'lee:news:page:con' => "Configure Settings",
+		'lee:news:page:news' => "New's Text",
+		'lee:news:page:spage' => "Dispaly News on specfic page leave blank if you wan't to display on all pages.",
+		'lee:news:page:page' => "Dispaly News on specfic page.",
 
  );
 					

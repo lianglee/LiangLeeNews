@@ -44,3 +44,11 @@ if (!elgg_is_active_plugin('LiangleeFramework')) {
      }
     }  
 }
+function LiangLeeNews_page(){
+if(elgg_get_config('https_login')){$connection = 'https';} else {$connection ='http';}
+$page = elgg_get_plugin_setting("LiangLee_news_page", "LiangLeeNews");
+if(elgg_get_plugin_setting("LiangLee_news_page", "LiangLeeNews")){$getpage = $page; 
+   if(LiangLee_url(array('connection' => $connection,'url' => $getpage))){
+    return LiangLee_view('LiangLeeNews','news/display');}}
+    return   LiangLee_view('LiangLeeNews','news/display');	
+}

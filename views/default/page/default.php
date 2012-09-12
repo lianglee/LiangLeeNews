@@ -56,9 +56,7 @@ header("Content-type: text/html; charset=UTF-8");
 	</div>
 	<div class="elgg-page-body">
 	  <div align="left">
-<?php
-LiangLee_view('LiangLeeNews','news/display');
-?>
+<?php LiangLeeNews_page(); ?>
 </div>
 <div class="elgg-inner">
 			<?php echo $body; ?>

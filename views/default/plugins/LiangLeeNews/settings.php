@@ -18,6 +18,14 @@ $plug_rel = LiangLee_release('LiangLeeNews');
 * Resgister Languages
 **/
 $lee_news_text = elgg_echo('leenews:1');
+$lee_news_text_2 = elgg_echo('lee:news:off:on');
+$lee_news_text_page = elgg_echo('lee:news:page:spage');
+
+$lee_news_h1 = elgg_echo('lee:news:page:con');
+$lee_news_h2 = elgg_echo('lee:news:page:news');
+$lee_news_h3 = elgg_echo('lee:news:page:page');
+
+
 
 /**
 * Resgister Settings
@@ -34,12 +42,28 @@ $lee_news_onoff = elgg_view('input/dropdown', array(
     'options_values' => array(
 	'1' => 'Enable News', 
 	'0' => 'Disable News'
-	)));
+)));
+$lee_news_page = elgg_view('input/text', array(
+    'name' => 'params[LiangLee_news_page]',
+    'value' => $vars['entity']->LiangLee_news_page,
+    'placeholder' => "dashboard",
+));
 $settings = <<<__HTML
 
     <div>
+	<div class='elgg-module-inline'>
+		<div class='elgg-head'>
+		<h3>$lee_news_h1</h3></div></div>
 		<p><i>$lee_news_text_2</i><br>$lee_news_onoff</p><br />
-        <p><i>$lee_news_text</i><br>$lee_news</p>
+			<div class='elgg-module-inline'>
+		<div class='elgg-head'>
+		<h3>$lee_news_h2</h3></div></div>
+        <p><i>$lee_news_text</i><br>$lee_news</p><br />
+			<div class='elgg-module-inline'>
+		<div class='elgg-head'>
+		<h3>Display on specfic page</h3></div></div>
+        <p><i>$lee_news_text_page</i><br>$lee_news_page</p>
+		    <hr>
 		 <p></p>
 		<p>Release: $plug_rel</p>
 		<p>Version: $plug_ver</p>
