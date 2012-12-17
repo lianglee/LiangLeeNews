@@ -1,5 +1,5 @@
 <?php
-/* LiangLee News Manager
+/** LiangLee News Manager
  * @website Link: http://community.elgg.org/pg/profile/arsalanlee/
  * @Package LiangLeeFramework
  * @Subpackage LiangLee News Manager
